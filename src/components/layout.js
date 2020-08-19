@@ -11,22 +11,18 @@ const useStyles = makeStyles({
         height: 'fill-available',
     },
     drawer: {
-        minWidth: 521,
+        minWidth: 526,
     },
     drawerLessWidth: {
-        minWidth: 106
+        minWidth: 82
     },
     content: {
         flex: '1 0 auto',
         backgroundColor: '#eeeeee'
     },
-    chat: {
-        textAlign: 'center',
-        margin: 0
-    },
     info: {
         flex: '1 0 auto',
-        maxWidth: 200,
+        maxWidth: 250,
         textAlign: 'center'
     },
     infoLessWidth: {

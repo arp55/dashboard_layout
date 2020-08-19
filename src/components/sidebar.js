@@ -7,37 +7,33 @@ import skype from '../assets/skype.svg';
 import MenuIcon from '@material-ui/icons/Menu';
 import Drawer from '@material-ui/core/Drawer';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
+import contact from '../assets/contacts.jpg';
+import inbox from '../assets/inbox.jpg';
 
 
 const useStyles = makeStyles({
     sidebar: {
-        backgroundColor: '#393f45',
-        width: 106,
+        backgroundColor: '#1d232a',
+        width: 86,
         zIndex: 100,
         height: '100%'
     },
-    list: {
-        width: 250,
-    },
-    fullList: {
-        width: 'auto',
-    },
     drawerPaper1: {
-        left: 105,
+        left: 86,
         width: 190,
-        backgroundColor: '#45484b',
+        backgroundColor: '#1d242c',
         zIndex: '-1000'
     },
     drawerPaper2: {
-        left: 295,
-        width: 225,
+        left: 276,
+        width: 250,
         boxShadow: 'none',
-        backgroundColor: '#5e5e5e',
+        backgroundColor: '#242b33',
         zIndex: '-1000'
     },
     icon: { width: '60%', margin: 20, color: 'white' },
     image: { width: '60%', margin: 5 },
-    btn: { backgroundColor: '#45484b' },
+    btn: { backgroundColor: '#1f2730' },
 });
 
 export default function SideBar() {
@@ -75,10 +71,10 @@ export default function SideBar() {
             </div>
 
             <Drawer variant="persistent" anchor={"left"} open={open} classes={{ paper: classes.drawerPaper1, }}>
-                <p style={{ fontSize: 34, color: '#ebdfdf', textAlign: 'center' }}>Inbox</p>
+                <img src={inbox} alt="inbox" style={{ height: '70%' }} />
             </Drawer>
             <Drawer variant="persistent" anchor={"left"} open={open} classes={{ paper: classes.drawerPaper2, }}>
-                <p style={{ fontSize: 34, color: '#ebdfdf', textAlign: 'center' }}>Friends</p>
+                <img src={contact} alt="contact" style={{ height: '70%' }} />
             </Drawer>
         </>
     )
