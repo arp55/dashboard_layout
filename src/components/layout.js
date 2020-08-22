@@ -11,7 +11,7 @@ const useStyles = makeStyles({
         height: 'fill-available',
     },
     drawer: {
-        minWidth: 526,
+        minWidth: 547,
     },
     drawerLessWidth: {
         minWidth: 82
@@ -22,7 +22,7 @@ const useStyles = makeStyles({
     },
     info: {
         flex: '1 0 auto',
-        maxWidth: 250,
+        maxWidth: 275,
         textAlign: 'center'
     },
     infoLessWidth: {
